@@ -2,6 +2,12 @@ use bevy::prelude::*;
 use card_plugin::CardPlugin;
 
 fn main() {
+    CardPlugin::define_rare_qualities("Rare Common BROKEN");
+    // idea: chain card types together to create custom combos
+    // CardPlugin::define_card_types("Creature 'Fast Spell' Sorcery");
+    // idea: generate trait for my plugins for them to generate code
+    // CardPlugin::generate_code();
+
     let mut app: App = App::new();
     app
         .add_startup_system(card_plugin::add_cards)
@@ -13,3 +19,4 @@ fn main() {
 fn hello_bevy() {
     println!("hello bevy!");
 }
+

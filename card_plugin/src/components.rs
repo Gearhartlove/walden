@@ -1,4 +1,5 @@
 use bevy::prelude::*;
+use crate::CardPlugin;
 
 #[derive(Component, Debug)]
 pub struct Card;
@@ -31,8 +32,13 @@ pub enum RareQualities {
     Legendary,
 }
 
+fn define_rare_qualities(qualities: Vec<String>) {
+
+}
+
 #[derive(Component)]
 pub struct CardTypes;
+// let card_rarities = vec!("Rare", "Common", "Epic");
 // enum CardTypes {} // Sub-card types
 
 #[derive(Component)]
